@@ -4,13 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>CX Wolf — Customer Experience for Executives</title>
-  <meta name="description" content="Practical CX frameworks for executives. Reduce friction, align operations, and measure what matters. Weekly briefing + Scorecard beta in Jan 2026.">
+  <meta name="description" content="Practical CX frameworks for executives. Reduce friction, align operations, and measure what matters. Weekly briefing + Scorecard beta in Dec 2025.">
+
   <!-- Open Graph -->
   <meta property="og:title" content="CX Wolf" />
   <meta property="og:description" content="Turn Customer Experience into measurable growth." />
   <meta property="og:image" content="/og-image.png" />
   <meta property="og:type" content="website" />
+
+  <!-- Favicon (real .ico) + PNG fallback -->
   <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 
@@ -68,7 +74,13 @@
     .inline-form{display:flex;gap:12px;flex-wrap:wrap}
     .small{font-size:13px;color:#bfc6cc}
 
-    /* NEW: CX Intelligence section styles */
+    /* Brand header */
+    .brand{display:flex;align-items:center;gap:14px;margin-bottom:12px}
+    .brand-logo{height:32px;width:auto}
+    .tagline{color:#bfc6cc;font-size:14px;letter-spacing:.06em}
+    @media (max-width:800px){ .brand-logo{height:28px} }
+
+    /* Intelligence section */
     .intel{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
     @media (max-width:980px){ .intel{grid-template-columns:1fr} }
     .chart-frame{
@@ -87,6 +99,10 @@
   <!-- HERO -->
   <header class="hero section">
     <div class="wrap">
+      <div class="brand">
+        <img src="/logo-cxwolf.png" alt="CX Wolf" class="brand-logo">
+        <span class="tagline">Customer Experience for Executives</span>
+      </div>
       <div class="kicker">CX WOLF</div>
       <h1>Turn Customer Experience into Measurable Growth</h1>
       <p class="sub">CX Wolf helps executives see what’s really driving—or blocking—customer impact. Practical frameworks, clean metrics, and leadership habits that compound.</p>
@@ -123,7 +139,7 @@
         <div class="links">
           <a href="#">YouTube</a>
           <a href="#">LinkedIn</a>
-          <a href="#">Email</a>
+          <a href="mailto:hello@cxwolf.com">Email</a>
         </div>
       </div>
     </div>
@@ -132,8 +148,9 @@
   <!-- SCORECARD TEASER -->
   <section class="section" style="background:linear-gradient(180deg,#0B0B0C, #0e0e10)">
     <div class="wrap">
-      <h2>The CX Wolf Scorecard <span style="color:#b79b3a">(Coming January 2026)</span></h2>
-      <p class="sub">A fast, data-backed way to assess CX maturity across <b>5 signals</b>: Customer Understanding, Experience Design, Operational Alignment, Data Utilization, and Culture &amp; Leadership.</p>
+      <h2>The CX Wolf Scorecard <span style="color:#b79b3a">(Coming December 2025)</span></h2>
+      <p class="sub">A fast, data-backed way to assess CX maturity across <b>6 signals</b>:
+      Customer Understanding, Experience Design, Operational Alignment, Data Utilization, Culture &amp; Leadership, and Measurement &amp; Improvement.</p>
       <div class="cta">
         <a class="btn btn-ghost" href="mailto:hello@cxwolf.com?subject=Scorecard%20Early%20Access">Get Early Access Updates</a>
       </div>
@@ -142,7 +159,7 @@
     </div>
   </section>
 
-  <!-- NEW: CX INTELLIGENCE (DATASET + 6-CATEGORY INDEX) -->
+  <!-- CX INTELLIGENCE (DATASET + 6-CATEGORY INDEX) -->
   <section class="section">
     <div class="wrap intel">
       <div>
@@ -166,7 +183,7 @@
       <!-- Chart/Image placeholder -->
       <div class="chart-frame">
         <p style="margin:6px 0 12px;color:#e1f6f8">Sample Chart / Dashboard Preview</p>
-        <!-- Replace the img src below with your PNG once ready: /images/cx-intel-sample.png -->
+        <!-- Replace the src with your PNG once ready: /images/cx-intel-sample.png -->
         <img src="/images/cx-intel-sample.png" alt="CX Intelligence sample visualization" style="width:100%;height:auto;max-height:360px;object-fit:cover;border-radius:10px;opacity:.95">
         <p class="small" style="margin-top:10px">Tip: 1200×800 PNG looks best. Keep labels high-contrast.</p>
       </div>
@@ -215,7 +232,10 @@
     <div class="wrap">
       <div class="divider"></div>
       <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;">
-        <span class="muted">© 2025 CX Wolf</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <img src="/logo-mark.png" alt="CX Wolf" style="height:20px;width:auto;opacity:.9">
+          <span class="muted">© 2025 CX Wolf</span>
+        </div>
         <div class="links">
           <a href="#">LinkedIn</a><a href="#">YouTube</a><a href="mailto:hello@cxwolf.com">Email</a>
         </div>
@@ -225,3 +245,4 @@
   </footer>
 </body>
 </html>
+
