@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CX Wolf — Customer Experience for Executives</title>
+  <meta name="description" content="Practical CX frameworks for executives. Reduce friction, align operations, and measure what matters. Weekly briefing + Scorecard beta in Jan 2026.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="CX Wolf" />
+  <meta property="og:description" content="Turn Customer Experience into measurable growth." />
+  <meta property="og:image" content="/og-image.png" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --obsidian:#0B0B0C;
+      --obsidian-2:#141416;
+      --gold:#CDA434;
+      --cyan:#19D3E0;
+      --slate:#6C7A89;
+      --white:#ffffff;
+      --max:1080px;
+      --radius:12px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--obsidian);color:var(--white);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:var(--cyan);text-decoration:none}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+    .section{padding:96px 0}
+    h1,h2,h3{font-family:Poppins,Inter,system-ui,sans-serif;margin:0 0 16px}
+    h1{font-size:56px;line-height:1.05}
+    @media (max-width:800px){ h1{font-size:38px} .section{padding:64px 0} }
+    h2{font-size:32px;color:var(--gold)}
+    h3{margin-bottom:8px}
+    p{margin:0 0 12px;color:#e9e9ea}
+    .sub{color:var(--slate);max-width:820px}
+    .btn{display:inline-block;padding:14px 22px;border-radius:var(--radius);font-weight:600}
+    .btn-gold{background:var(--gold);color:var(--obsidian)}
+    .btn-ghost{border:1px solid var(--cyan);color:var(--cyan)}
+    .row{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    @media (max-width:900px){ .row{grid-template-columns:1fr} }
+    .card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);padding:20px;border-radius:16px}
+    .muted{color:var(--slate);font-size:14px}
+    header.hero{
+      position:relative;overflow:hidden;
+      background: radial-gradient(1200px 600px at 20% -10%, var(--obsidian-2), transparent);
+    }
+    .wolf{
+      position:absolute;right:-60px;bottom:-80px;opacity:.06;
+      width:520px;height:520px;background:
+        conic-gradient(from 0deg at 50% 50%, transparent 0 25%, #fff1 0 100%);
+      filter:blur(0.3px);border-radius:50%;
+    }
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+    .kicker{letter-spacing:.18em;color:var(--cyan);font-weight:600;margin-bottom:10px}
+    .divider{height:1px;background:linear-gradient(90deg,transparent, #19D3E055, transparent);margin:28px 0}
+    footer{padding:48px 0;border-top:1px solid rgba(255,255,255,.08)}
+    .links{display:flex;gap:16px;flex-wrap:wrap}
+    .grid2{display:grid;grid-template-columns:1.2fr .8fr;gap:28px}
+    @media (max-width:900px){ .grid2{grid-template-columns:1fr} }
+    input[type="email"]{
+      background:#0f0f11;border:1px solid #2a2a2d;color:#fff;border-radius:10px;
+      padding:14px 16px;width:100%;
+    }
+    .inline-form{display:flex;gap:12px;flex-wrap:wrap}
+    .small{font-size:13px;color:#bfc6cc}
+
+    /* NEW: CX Intelligence section styles */
+    .intel{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+    @media (max-width:980px){ .intel{grid-template-columns:1fr} }
+    .chart-frame{
+      background:rgba(255,255,255,.02);
+      border:1px dashed rgba(25,211,224,.45);
+      border-radius:16px;
+      padding:18px;
+      text-align:center;
+      color:#bcdde1;
+    }
+    .pill{display:inline-block;background:#0f1012;border:1px solid rgba(255,255,255,.08);border-radius:999px;padding:6px 10px;margin:3px;font-size:13px;color:#ccd3d9}
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero section">
+    <div class="wrap">
+      <div class="kicker">CX WOLF</div>
+      <h1>Turn Customer Experience into Measurable Growth</h1>
+      <p class="sub">CX Wolf helps executives see what’s really driving—or blocking—customer impact. Practical frameworks, clean metrics, and leadership habits that compound.</p>
+      <div class="cta">
+        <a class="btn btn-gold" href="mailto:hello@cxwolf.com?subject=Subscribe%20to%20CX%20Wolf%20Briefing">Get the Weekly Briefing</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/groups/">Join “CX for Executives”</a>
+      </div>
+      <p class="muted" style="margin-top:8px">No spam. One sharp email per week.</p>
+    </div>
+    <div class="wolf" aria-hidden="true"></div>
+  </header>
+
+  <!-- WHAT WE DO -->
+  <section class="section">
+    <div class="wrap">
+      <h2>What You’ll Get Here</h2>
+      <div class="row" style="margin-top:18px">
+        <div class="card"><h3>Clarity, not jargon</h3><p>Align promise, operations, and outcomes—without buzzwords.</p></div>
+        <div class="card"><h3>Operator-grade tools</h3><p>Scorecards and checklists you can run next Monday.</p></div>
+        <div class="card"><h3>Evidence over hype</h3><p>Data, patterns, and field notes from real transformations.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <div class="wrap grid2">
+      <div>
+        <h2>Behind CX Wolf</h2>
+        <p>I’ve led CX and operations teams in PE-backed and growth environments for 15+ years. The pattern is consistent: good intentions, broken systems. CX Wolf is my way of giving executives a clearer path—less theater, more traction. If you want customer experience that shows up in P&amp;L, you’re in the right place.</p>
+      </div>
+      <div class="card">
+        <h3>Quick Links</h3>
+        <div class="links">
+          <a href="#">YouTube</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCORECARD TEASER -->
+  <section class="section" style="background:linear-gradient(180deg,#0B0B0C, #0e0e10)">
+    <div class="wrap">
+      <h2>The CX Wolf Scorecard <span style="color:#b79b3a">(Coming January 2026)</span></h2>
+      <p class="sub">A fast, data-backed way to assess CX maturity across <b>5 signals</b>: Customer Understanding, Experience Design, Operational Alignment, Data Utilization, and Culture &amp; Leadership.</p>
+      <div class="cta">
+        <a class="btn btn-ghost" href="mailto:hello@cxwolf.com?subject=Scorecard%20Early%20Access">Get Early Access Updates</a>
+      </div>
+      <div class="divider"></div>
+      <p class="small">Be first to test the beta and receive the setup guide.</p>
+    </div>
+  </section>
+
+  <!-- NEW: CX INTELLIGENCE (DATASET + 6-CATEGORY INDEX) -->
+  <section class="section">
+    <div class="wrap intel">
+      <div>
+        <h2>Industry-Scale CX Intelligence <span style="color:#6f7a86">(Coming Soon)</span></h2>
+        <p>Behind the frameworks is data. We’re compiling a living dataset of <b>millions of public CX datapoints</b> across industries (reviews, response times, policy signals, service artifacts, and more).</p>
+        <p>Then we overlay the <b>CX Wolf Maturity Index</b> — six categories that separate momentum from theater:</p>
+        <div>
+          <span class="pill">Customer Understanding</span>
+          <span class="pill">Experience Design</span>
+          <span class="pill">Operational Alignment</span>
+          <span class="pill">Data &amp; Insight Utilization</span>
+          <span class="pill">Culture &amp; Leadership</span>
+          <span class="pill">Measurement &amp; Improvement</span>
+        </div>
+        <p class="sub" style="margin-top:8px">The result: <b>benchmarks, friction maps, and maturity profiles</b> by industry and company size — a practical lens leaders can act on.</p>
+        <div class="cta" style="margin-top:12px">
+          <a class="btn btn-ghost" href="mailto:hello@cxwolf.com?subject=Data%20Preview%20Request">Request Data Preview</a>
+        </div>
+      </div>
+
+      <!-- Chart/Image placeholder -->
+      <div class="chart-frame">
+        <p style="margin:6px 0 12px;color:#e1f6f8">Sample Chart / Dashboard Preview</p>
+        <!-- Replace the img src below with your PNG once ready: /images/cx-intel-sample.png -->
+        <img src="/images/cx-intel-sample.png" alt="CX Intelligence sample visualization" style="width:100%;height:auto;max-height:360px;object-fit:cover;border-radius:10px;opacity:.95">
+        <p class="small" style="margin-top:10px">Tip: 1200×800 PNG looks best. Keep labels high-contrast.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section">
+    <div class="wrap">
+      <h2>Get the CX Wolf Briefing</h2>
+      <p class="sub">One email a week. Field-tested playbooks on reducing friction, measuring what matters, and leading customer-centric ops.</p>
+
+      <!-- Replace this with your email provider’s embed when ready -->
+      <form class="inline-form" onsubmit="window.location='mailto:hello@cxwolf.com?subject=Subscribe%20to%20CX%20Wolf%20Briefing'; return false;">
+        <input type="email" placeholder="Your email address" required />
+        <button class="btn btn-gold" type="submit">Subscribe</button>
+      </form>
+      <label class="small" style="display:block;margin-top:10px;">
+        <input type="checkbox" disabled checked /> I want early access to the Scorecard and Data previews.
+      </label>
+    </div>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section class="section">
+    <div class="wrap card">
+      <h3>Learn with Peers</h3>
+      <p>Join <b>CX for Executives</b> on LinkedIn—a curated space for COOs, CX leaders, and founders who treat customer experience as a system, not a slogan.</p>
+      <div class="cta"><a class="btn btn-ghost" href="https://www.linkedin.com/groups/">Request to Join the Group</a></div>
+    </div>
+  </section>
+
+  <!-- RESOURCE PROMO -->
+  <section class="section">
+    <div class="wrap">
+      <div class="card">
+        <h3>Free Download: The Friction Audit</h3>
+        <p class="sub">A one-page checklist to find and fix customer effort fast.</p>
+        <div class="cta"><a class="btn btn-gold" href="/CXWolf_FrictionAudit_2025.pdf">Download PDF</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="divider"></div>
+      <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+        <span class="muted">© 2025 CX Wolf</span>
+        <div class="links">
+          <a href="#">LinkedIn</a><a href="#">YouTube</a><a href="mailto:hello@cxwolf.com">Email</a>
+        </div>
+      </div>
+      <div class="small" style="margin-top:8px;color:#9aa3aa">Built for leaders. No fluff.</div>
+    </div>
+  </footer>
+</body>
+</html>
